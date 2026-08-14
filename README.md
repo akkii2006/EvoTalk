@@ -2,6 +2,10 @@
 
 A single-speaker text-to-speech acoustic model built from scratch in PyTorch. A standalone architecture that predicts mel spectrograms from phonemes, vocoded natively with Vocos at 24 kHz.
 
+## Status
+
+The current v1 model has overfitted to its training data (Hi-Fi TTS speaker 9017), so generalization to new speakers or unseen prosody is limited. A second version addressing this is in active development. The model does however produce intelligible audio output for single-speaker synthesis.
+
 ## Architecture
 
 CosmicFish-like: transformer encoder and decoder (GQA, RoPE, SwiGLU, RMSNorm) around a variance adaptor that predicts per-phoneme duration, pitch, and energy, then expands the enriched sequence to frame level with a length regulator. ~80M parameters.
@@ -21,6 +25,7 @@ CosmicFish-like: transformer encoder and decoder (GQA, RoPE, SwiGLU, RMSNorm) ar
 | Train | `train.py` | Main training with masked L1/MSE losses, AMP, cosine LR |
 | Finetune | `finetune.py` / `long_finetune.py` | Long-form and extra-long utterance stages |
 | Synthesize | `inference.py` | Interactive REPL with sentence/clause chunking |
+| Predict | `predict.py` | Render the predicted mel spectrogram as an image |
 | Sweep | `sweep.py` | Render one script across every checkpoint |
 
 ## Usage
