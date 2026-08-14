@@ -1,0 +1,23 @@
+# --- Large binaries ---
+*.pt
+*.pth
+*.ckpt
+
+# --- Generated output ---
+audio/
+audio_sweep/
+checkpoints/
+checkpoints_finetune/
+checkpoints_long/
+data/
+data_long/
+data_xlong/
+evotalk_sweep.zip
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- OS ---
+.DS_Store

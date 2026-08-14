@@ -1,0 +1,12 @@
+# torchaudio>=2.1 is required for the forced_align / merge_tokens alignment API.
+torch>=2.1.0
+torchaudio>=2.1.0
+datasets>=2.18.0
+huggingface_hub>=0.20.0
+soundfile
+numpy
+tqdm
+scipy
+phonemizer
+matplotlib
+torchcodec
