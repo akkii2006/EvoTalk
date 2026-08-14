@@ -2,6 +2,11 @@
 
 A single-speaker text-to-speech acoustic model built from scratch in PyTorch. A standalone architecture that predicts mel spectrograms from phonemes, vocoded natively with Vocos at 24 kHz.
 
+## Links
+
+- GitHub: https://github.com/akkii2006/EvoTalk
+- Hugging Face: https://huggingface.co/akkiisfrommars/EvoTalk
+
 ## Status
 
 The current v1 model has overfitted to its training data (Hi-Fi TTS speaker 9017), so generalization to new speakers or unseen prosody is limited. A second version addressing this is in active development. The model does however produce intelligible audio output for single-speaker synthesis.
