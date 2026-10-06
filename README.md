@@ -59,6 +59,7 @@ Predicted mel spectrogram from `python predict.py --text "Hello! How are you? I 
 
 ![Predicted Mel](mel.png)
 
+Dataset creation credit: https://github.com/workforadityanair-code
 ## License
 
 Apache 2.0
